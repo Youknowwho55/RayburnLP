@@ -10,24 +10,17 @@ pub fn Hero() -> Element {
     };
     rsx! {
 
-        // We can create elements inside the rsx macro with the element name followed by a block of attributes and children.
-        div {
-            // Attributes should be defined in the element before any children
-            id: "hero",
-            // After all attributes are defined, we can define child elements and components
-            // img { src: HEADER_SVG, id: "header" }
-            div { id: "links",
-                // The RSX macro also supports text nodes surrounded by quotes
-            p{class:"", "Streamlined Loan Processing - Fee Covered by the Borrower at Closing!"
-            Button {
-                button_scheme: ButtonScheme::Success,
-                button_size: ButtonSize::Large,
-                on_click: handle_click,
-                "Success Button"
+        section { class: "flex items-center justify-center bg-gradient-to-br from-yellow-50 to-yellow-100",
+            div { class: "text-center p-8 max-w-4xl",
+                h1 { class: "text-4xl md:text-4xl font-bold text-yellow-600 mb-4", "Streamlined Loan Processing - Fee Covered by the Borrower at Closing!" }
+                Button {
+                    button_scheme: ButtonScheme::Custom,
+                    button_size: ButtonSize::Large,
+                    on_click: handle_click,
+                    "Get in touch with us!"
+                }            
             }
 
-        }
-            }
         }
     }
 }

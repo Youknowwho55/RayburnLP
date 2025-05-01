@@ -7,9 +7,13 @@ mod navbar;
 pub use navbar::Navbar;
 
 mod hero;
+pub use hero::Hero;
 
 mod about;
 pub use about::About;
+
+mod programs;
+pub use programs::Programs;
 
 mod team;
 pub use team::Team;

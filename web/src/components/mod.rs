@@ -11,6 +11,8 @@ pub mod loading_spinner;
 
 // Re-export from modules
 pub use button::{Button, ButtonSize, ButtonScheme, ButtonType};
+pub use card::{Card, CardTitle, CardBody};
+
 pub use input::{Input, InputSize, InputType, InputProps, TextInput, PasswordInput, DateInput, NumberInput,SelectInput};
 pub use inline_form::{InlineForm, InlineFormProps};
 pub use steps::Steps;

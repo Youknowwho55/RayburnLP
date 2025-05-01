@@ -10,6 +10,12 @@
   --color-secondary: oklch(0.94 0.0158 154.46);
   --color-accent: oklch(0.96 0.0175 73.08);
   --color-muted: oklch(0.99 0.0062 75.41);
+
+  /* Custom Colors For Website*/
+  --color-lpBackground: oklch(0.95 0.025 89.21);
+  --color-lpBlue: oklch(0.44 0.1021 254.51);
+  --color-lpText: oklch(0.34 0.0524 235.07);
+  --color-lpButton: oklch(0.76 0.1196 77.08);
 }
 
 @theme {

@@ -1,26 +1,20 @@
 use dioxus::prelude::*;
+use crate::components::button::{Button, ButtonScheme, ButtonSize};
 use crate::components::card::{Card, CardTitle, CardBody};
-
 
 /// The Home page component that will be rendered when the current route is `[Route::Home]`
 #[component]
-pub fn Pricing() -> Element {
+pub fn Programs() -> Element {
     rsx! {
         Card {
             // href: "https://example.com",
             // image_src: Some("https://example.com/image.jpg"),
             // image_alt: Some("Card header image"),
             CardTitle {
-                "Standard Fee"
+                "Business Purpose Real Estate"
             }
             CardBody {
-                "Non-QM"
-                br {}
-                "Business Purpose"
-                br {}
-                "Conventional"
-                br {}
-                "Hard Money"
+                "Card Body"
             }
         }
 
@@ -29,17 +23,11 @@ pub fn Pricing() -> Element {
                 // image_src: Some("https://example.com/image.jpg"),
                 // image_alt: Some("Card header image"),
                 CardTitle {
-                    "Other"
+                    "Self Employed"
                 }
                 CardBody {
-                    "IRRRL"
-                    br {}
-                    "FHA Streamline"
-                    br {}
-                    "Seconds"
-                    br {}
-                    "HELOC's"               
-                 }
+                    "Card Body"
+                }
         }
 
         Card {
@@ -47,19 +35,36 @@ pub fn Pricing() -> Element {
             // image_src: Some("https://example.com/image.jpg"),
             // image_alt: Some("Card header image"),
             CardTitle {
-                "Add-ons"
+                "Business Purpose Real Estate"
             }
             CardBody {
-                "Re-submissions"
-                br {}
-                "Rush Requests"
-                br {}
-                "Registration"
-                br {}
-                "(Each additional service is priced individually)"             
-             }
+                "Card Body"
+            }
     }
 
+    Card {
+        // href: "https://example.com",
+        // image_src: Some("https://example.com/image.jpg"),
+        // image_alt: Some("Card header image"),
+        CardTitle {
+            "Business Purpose Real Estate"
+        }
+        CardBody {
+            "Card Body"
+        }
+    }
+}
+}
 
-}
-}
+
+
+// Button {
+//     button_scheme: ButtonScheme::Custom,
+//     button_size: ButtonSize::Large,
+//     on_click: handle_click,
+//     "Learn More"
+// }  
+
+
+
+

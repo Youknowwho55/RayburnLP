@@ -1,60 +1,64 @@
 use crate::Route;
 use dioxus::prelude::*;
+use crate::components::button::{Button, ButtonScheme, ButtonSize};
+const LOGO: Asset = asset!("/assets/logo.png");
 
-
-/// The Navbar component that will be rendered on all pages of our app since every page is under the layout.
-///
-///
-/// This layout component wraps the UI of [Route::Home] and [Route::Blog] in a common navbar. The contents of the Home and Blog
-/// routes will be rendered under the outlet inside this component
 #[component]
 pub fn Navbar(children: Element) -> Element {
-    rsx! {
-        nav { id: "navbar", class: "w-full bg-gray-900 text-white shadow-md",
-            div { class: "max-w-6xl mx-auto px-4 py-2 flex items-center justify-between",
-                h1 { class: "text-xl font-semibold", "MyApp" }
-                div { class: "flex gap-6 items-center text-sm",
-                    Link {
-                        to: Route::Home {},
-                        class: "hover:text-blue-400 transition",
-                        "Home"
-                    }
+    let handle_click = move |_| {
+        println!("Button clicked!");
+    };
 
+    rsx! {
+        nav { id: "navbar", class: "w-full  text-white shadow-md",
+            div { class: "max-w-6xl mx-auto px-4 py-2 flex items-center justify-between",
+
+                // Left side: Logo
+                a {
+                    href: "https://rayburnlp.com",
+                    img {
+                        class: "h-15", // Adjust height for your needs
+                        src: LOGO,
+                        alt: "Card header image"
+                    }
+                }
+
+
+                // Right side: Links and Button
+                div { class: "flex gap-6 items-center text-sm text-gray-900",
                     Link {
                         to: Route::About {},
                         class: "hover:text-blue-400 transition",
-                        "About Us"
+                        "About"
                     }
                     Link {
-                        to: Route::Team { },
+                        to: Route::Team {},
                         class: "hover:text-blue-400 transition",
                         "Team"
                     }
                     Link {
-                        to: Route::Pricing {  },
+                        to: Route::Pricing {},
                         class: "hover:text-blue-400 transition",
                         "Pricing"
                     }
                     Link {
-                        to: Route::Resources {  },
+                        to: Route::Resources {},
                         class: "hover:text-blue-400 transition",
                         "Resources"
                     }
                     Link {
-                        to: Route::Contact {  },
+                        to: Route::Contact {},
                         class: "hover:text-blue-400 transition",
-                        "Contact Us"
+                        "Contact"
                     }
-
-
+                    Button {
+                        button_scheme: ButtonScheme::Custom,
+                        button_size: ButtonSize::Large,
+                        on_click: handle_click,
+                        "Learn More"
+                    }
                 }
             }
         }
-        // Outlet::<Route> {}
-
-
+    }
 }
-}
-
-
-
