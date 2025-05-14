@@ -4,6 +4,8 @@ use dioxus::prelude::*;
 #[component]
 pub fn Team() -> Element {
     rsx! {
-        p { "This is the Teams section" }
+        h2 { class: "font-bold text-2xl inline-block pb-1 border-b-2 border-yellow-400 hover:border-yellow-600 transition-colors",
+            "Our Team"
+        }
     }
 }

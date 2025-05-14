@@ -3,7 +3,6 @@
 use dioxus::prelude::*;
 
 use views::{About, AppLayout, Contact, Home, Pricing, Resources, Team};
-
 mod components;
 mod views;
 

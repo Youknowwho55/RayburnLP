@@ -15,7 +15,7 @@ pub struct CardProps {
 
 #[component]
 pub fn Card(props: CardProps) -> Element {
-    let base_class = "block max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700";
+    let base_class = "block max-w-sm bg-white border border-gray-200 rounded-xl shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700";
     let class = format!("{} {}", base_class, props.class.clone().unwrap_or_default());
     let content_class = if props.image_src.is_some() { "p-6" } else { "p-6" };
     
