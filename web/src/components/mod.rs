@@ -9,6 +9,7 @@ pub mod steps;
 pub mod accordion;
 pub mod loading_spinner;
 pub mod icons;
+pub mod team_member;
 // Re-export from modules
 pub use button::{Button, ButtonSize, ButtonScheme, ButtonType};
 pub use card::{Card, CardTitle, CardBody};
@@ -18,6 +19,7 @@ pub use inline_form::{InlineForm, InlineFormProps};
 pub use steps::Steps;
 pub use hero::Hero;
 pub use icons::BuildingIcon;
+pub use team_member::TeamMember;
 // pub use toast::{ToastFrame, ToastFrameProps, ToastManager, ToastInfo, ToastScheme, ToastSize, Position};
 pub use loading_spinner::{
     SpinnerSize,
