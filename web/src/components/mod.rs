@@ -10,15 +10,23 @@ pub mod accordion;
 pub mod loading_spinner;
 pub mod icons;
 pub mod team_member;
+// pub mod program_accordion;
+pub mod resource_table;
+
+
+
 // Re-export from modules
+pub use resource_table::{ResourceTable, ResourceItem};
+// pub use program_accordion::ProgramsAccordion;
 pub use button::{Button, ButtonSize, ButtonScheme, ButtonType};
 pub use card::{Card, CardTitle, CardBody};
 
+use dioxus::html::mo;
 pub use input::{Input, InputSize, InputType, InputProps, TextInput, PasswordInput, DateInput, NumberInput,SelectInput};
 pub use inline_form::{InlineForm, InlineFormProps};
 pub use steps::Steps;
 pub use hero::Hero;
-pub use icons::BuildingIcon;
+pub use icons::{BuildingIcon, HomeGarage};
 pub use team_member::TeamMember;
 // pub use toast::{ToastFrame, ToastFrameProps, ToastManager, ToastInfo, ToastScheme, ToastSize, Position};
 pub use loading_spinner::{

@@ -1,9 +1,11 @@
 use dioxus::prelude::*;
 use crate::components::button::{Button, ButtonScheme, ButtonSize};
 use crate::components::card::{Card, CardTitle, CardBody};
+use crate::components::HomeGarage;
 
 #[component]
 pub fn Programs() -> Element {
+
     rsx! {
         div { class: "text-white font-semibold gap-4 p-4 bg-lpBlue",
             // Header with centered H3 and orange underline
@@ -17,6 +19,7 @@ pub fn Programs() -> Element {
                 // Card 1
                 div { class: "md:flex-1 ",
                     Card {
+                        HomeGarage {}
                         CardTitle { "Business Purpose Real Estate" }
                         CardBody { "Card Body" }
                     }
@@ -49,3 +52,6 @@ pub fn Programs() -> Element {
         }
     }
 }
+
+
+

@@ -1,5 +1,5 @@
 use dioxus::prelude::*;
-use crate::views::{About, Pricing, Programs, Hero, Team};
+use crate::views::{About, Hero, Pricing, Programs, Resources, Team};
 
 /// The Home page component that will be rendered when the current route is `[Route::Home]`
 #[component]
@@ -14,5 +14,6 @@ pub fn Home() -> Element {
         About {}
         Pricing {}
         Team {}
+        Resources {}
     }
 }
