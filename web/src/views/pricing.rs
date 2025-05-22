@@ -5,7 +5,7 @@ use crate::components::card::{Card, CardTitle, CardBody};
 #[component]
 pub fn Pricing() -> Element {
     rsx! {
-        div { class: "text-white font-semibold gap-4 p-4 bg-lpBlue",
+        div { class: " font-semibold gap-4 p-4",
             // Header with centered H3 and orange underline
             div { class: "flex justify-center mb-6",
                 h3 { class: "text-2xl font-bold text-center border-b-2 border-orange-500 pb-2",

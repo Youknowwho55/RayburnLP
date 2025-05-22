@@ -11,7 +11,7 @@ pub fn Navbar(children: Element) -> Element {
 
     rsx! {
         nav { id: "navbar", class: "w-full  text-white shadow-md",
-            div { class: "max-w-6xl mx-auto px-4 py-2 flex items-center justify-between",
+            div { class: "px-8 py-2 mx-auto flex items-center justify-between",
 
                 // Left side: Logo
                 a {

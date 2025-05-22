@@ -26,7 +26,7 @@ pub use input::{Input, InputSize, InputType, InputProps, TextInput, PasswordInpu
 pub use inline_form::{InlineForm, InlineFormProps};
 pub use steps::Steps;
 pub use hero::Hero;
-pub use icons::{BuildingIcon, HomeGarage};
+pub use icons::{BuildingIcon, HomeGarage, ArrowRight, HomePerson, HomeCheck, HomeHeart};
 pub use team_member::TeamMember;
 // pub use toast::{ToastFrame, ToastFrameProps, ToastManager, ToastInfo, ToastScheme, ToastSize, Position};
 pub use loading_spinner::{

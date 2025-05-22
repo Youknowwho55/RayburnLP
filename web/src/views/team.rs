@@ -5,9 +5,14 @@ use crate::components::team_member::TeamMember;
 #[component]
 pub fn Team() -> Element {
     rsx! {
-        h2 { class: "font-bold text-2xl inline-block pb-1 border-b-2 border-yellow-400 hover:border-yellow-600 transition-colors",
+
+            div { class: "flex justify-center mb-6",
+
+
+        h3 { class: "font-bold text-2xl inline-block pb-1 border-b-2 border-yellow-400 hover:border-yellow-600 transition-colors",
             "Our Team"
         }
+    }
         div { class: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8",
             TeamMember {
                 name: "John Doe".to_string(),

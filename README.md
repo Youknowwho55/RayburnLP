@@ -10,6 +10,13 @@ dx serve --platform web
 
 ### Tailwind
 
+use the Tailwing CSS CLI Installation
+https://tailwindcss.com/docs/installation/tailwind-cli
+
+```bash
+cd web
+```
+
 ```bash
 npx tailwindcss -i ./input.css -o ./assets/tailwind.css --watch
 ```
@@ -27,6 +34,7 @@ Fluent UI System Icons by Microsoft Corporation. From Iconify
 - Fluent:document-pdf-20-regular
 - Fluent:mail-20-regular
 - Fluent:calculator-20-regular
+- Fluent:home-heart-20-regular
 
 ## Other
 
