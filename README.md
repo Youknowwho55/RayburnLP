@@ -4,9 +4,31 @@
 
 Processing Website
 
+```bash
+dx serve --platform web
+```
+
 ### Tailwind
 
+```bash
 npx tailwindcss -i ./input.css -o ./assets/tailwind.css --watch
+```
+
+### Icons
+
+Fluent UI System Icons by Microsoft Corporation. From Iconify
+
+- Fluent:home-garage-20-regular
+- Fluent:home-person-20-regular
+- Fluent:home-checkmark-20-regular
+- Fluent:text-percent-20-regular
+- Fluent:arror-circle-right-20-regular
+- Fluent:call-20-regular
+- Fluent:document-pdf-20-regular
+- Fluent:mail-20-regular
+- Fluent:calculator-20-regular
+
+## Other
 
         // div { class: "relative",
         //     // Vertical line
