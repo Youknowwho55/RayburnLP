@@ -98,6 +98,7 @@
     --color-customGreen-600: oklch(0.7 0.0808 133.19);
     --color-secondary: oklch(0.94 0.0158 154.46);
     --color-accent: oklch(0.96 0.0175 73.08);
+    --color-lpBackground: oklch(0.95 0.025 89.21);
     --color-lpBlue: oklch(0.44 0.1021 254.51);
     --color-lpButton: oklch(0.76 0.1196 77.08);
   }
@@ -547,6 +548,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -695,6 +699,9 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
+  }
   .bg-gray-700 {
     background-color: var(--color-gray-700);
   }
@@ -706,6 +713,9 @@
   }
   .bg-green-700 {
     background-color: var(--color-green-700);
+  }
+  .bg-lpBackground {
+    background-color: var(--color-lpBackground);
   }
   .bg-lpBlue {
     background-color: var(--color-lpBlue);
@@ -1268,6 +1278,11 @@
   .md\:flex-1 {
     @media (width >= 48rem) {
       flex: 1;
+    }
+  }
+  .md\:flex-1\/2 {
+    @media (width >= 48rem) {
+      flex: calc(1/2 * 100%);
     }
   }
   .md\:grid-cols-2 {
